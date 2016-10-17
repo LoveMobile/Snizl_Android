@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/size_16"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_16"
+        android:text="@string/claim_title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_instore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:drawableTop="@drawable/ic_store"
+            android:drawablePadding="@dimen/size_08"
+            android:text="@string/instore"
+            android:textAllCaps="false"
+            android:theme="@style/AppTheme.Button.Flat"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:drawableTop="@drawable/ic_phone"
+            android:drawablePadding="@dimen/size_08"
+            android:text="@string/phone"
+            android:textAllCaps="false"
+            android:theme="@style/AppTheme.Button.Flat"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:drawableTop="@drawable/ic_link"
+            android:drawablePadding="@dimen/size_08"
+            android:text="@string/website"
+            android:textAllCaps="false"
+            android:theme="@style/AppTheme.Button.Flat"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn_custom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:drawableTop="@drawable/ic_info_outline"
+            android:drawablePadding="@dimen/size_08"
+            android:text="@string/custom"
+            android:textAllCaps="false"
+            android:theme="@style/AppTheme.Button.Flat"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </LinearLayout>
+
+</LinearLayout>

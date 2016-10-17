@@ -1,0 +1,188 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorButtonNormal</item>
+        <item name="colorPrimaryDark">@color/colorRedDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorButtonNormal</item>
+        <item name="colorPrimaryDark">@color/colorRedDark</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--************************************ Toolbar ************************************-->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+        <item name="actionMenuTextColor">@android:color/black</item>
+        <!-- Tints the input fields like checkboxes and text fields -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!-- Applies to views in their normal state. -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!-- Applies to views in their activated state (i.e checked or switches) -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <!-- Applied to framework control highlights (i.e ripples or list selectors) -->
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+        <!-- Enable these below if you want clicking icons to trigger a ripple effect -->
+        <!--
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+        -->
+    </style>
+
+    <style name="AppTheme.ToolbarPopup" parent="AppTheme">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/font_size_20</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/font_size_20</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/font_size_32</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--************************************ Dialog ************************************-->
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <style name="ProgressDialogTransparentTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="colorAccent">@color/colorButtonNormal</item>
+
+    </style>
+
+    <style name="CustomProgressDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="colorAccent">@color/colorButtonNormal</item>
+
+    </style>
+
+    <style name="floating_action_menu_labels_style">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/colorButtonNormal</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+
+    <!--************************************ Button ************************************-->
+    <style name="AppTheme.Button" parent="AppTheme">
+        <item name="android:minWidth">@dimen/size_88</item>
+        <item name="android:minHeight">@dimen/size_36</item>
+        <item name="android:paddingLeft">@dimen/size_16</item>
+        <item name="android:paddingRight">@dimen/size_16</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="AppTheme.Button.Raised.Dark" parent="AppTheme.Button">
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Button.Raised.Dark.Facebook" parent="AppTheme.Button.Raised.Dark">
+        <item name="colorControlHighlight">@color/com_facebook_button_background_color_pressed</item>
+        <item name="colorButtonNormal">@color/com_facebook_button_background_color</item>
+    </style>
+
+    <style name="AppTheme.Button.Raised.Light" parent="AppTheme.Button">
+        <item name="colorControlHighlight">@color/colorButtonPressed</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="android:textColor">@color/colorButtonNormal</item>
+    </style>
+
+    <style name="GrayBackgroundButtonTheme" parent="AppTheme.Button">
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorGrayLight</item>
+        <item name="android:textColor">@color/colorGrayDark</item>
+    </style>
+
+    <style name="RedBackgroundButtonTheme" parent="AppTheme.Button">
+        <item name="colorControlHighlight">@color/colorGrayLight</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Button.Flat" parent="AppTheme.Button">
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <!--************************************ EditText ************************************-->
+    <!--Floating label text style-->
+    <style name="AppTheme.FloatingLabel" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!--Hint text style-->
+    <style name="AppTheme.HintText">
+        <item name="android:textColorHint">@color/colorPrimary</item>
+    </style>
+
+    <!--EditText style-->
+    <style name="AppTheme.EditText" parent="AppTheme">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+        <item name="colorControlNormal">@color/colorGrayDark</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.EditText.Dark" parent="AppTheme.EditText">
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.EditText.Light" parent="AppTheme.EditText">
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <!--************************************ CardView ************************************-->
+    <style name="AppTheme.CardView" parent="AppTheme">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+    </style>
+
+    <!--************************************ TabLayout ************************************-->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTabText</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="MyCustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/font_size_16</item>
+        <item name="android:textColor">@color/colorRedLight</item>
+    </style>
+</resources>

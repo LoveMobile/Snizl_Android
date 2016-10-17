@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/size_16"
+    android:paddingRight="@dimen/size_16"
+    android:paddingTop="@dimen/size_08"
+    android:paddingBottom="@dimen/size_08"
+    android:textSize="@dimen/font_size_20"
+    android:textColor="@color/colorPrimary"
+    android:singleLine="true"
+    android:ellipsize="marquee" />

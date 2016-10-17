@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search_white"
+        android:menuCategory="secondary"
+        app:showAsAction="ifRoom"
+        android:title="@string/search"/>
+
+    <item
+        android:id="@+id/menu_refresh"
+        app:showAsAction="never"
+        android:title="@string/refresh_feed">
+    </item>
+    <item
+        android:id="@+id/menu_range"
+        app:showAsAction="never"
+        android:title="@string/adjust_range">
+    </item>
+    <item
+        android:id="@+id/menu_preferences"
+        app:showAsAction="never"
+        android:title="@string/feed_preferences">
+    </item>
+
+</menu>

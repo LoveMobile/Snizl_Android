@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/drawer_menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_deals"
+            android:checked="true"
+            android:icon="@drawable/ic_offer"
+            android:title="@string/deals" />
+
+        <item
+            android:id="@+id/drawer_events"
+            android:checked="false"
+            android:icon="@drawable/ic_event"
+            android:title="@string/events" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/drawer_menu_bottom">
+        <item
+            android:id="@+id/drawer_range"
+            android:title="@string/range" />
+
+        <item
+            android:id="@+id/drawer_my_wallet"
+            android:title="@string/my_wallet" />
+
+        <item
+            android:id="@+id/drawer_log_out"
+            android:title="@string/log_out" />
+
+    </group>
+</menu>

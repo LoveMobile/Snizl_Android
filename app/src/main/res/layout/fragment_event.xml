@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorHeight="2dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        style="@style/MyCustomTabLayout">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_hub"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Hub Name" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_around_me"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/around_me" />
+
+    </android.support.design.widget.TabLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayLight">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_events"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/size_16"
+                android:scrollbars="none"
+                android:clipToPadding="false" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/tv_no_results_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_results_found"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="@dimen/font_size_18"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

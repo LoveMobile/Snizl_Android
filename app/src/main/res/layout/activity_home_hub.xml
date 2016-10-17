@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayLight"
+    android:orientation="vertical"
+    tools:context="com.snizl.android.views.user.HomeHub">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_16"
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_08"
+            android:text="@string/home_hub_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_detected_hub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_08"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:contentPaddingLeft="@dimen/size_16"
+        card_view:contentPaddingRight="@dimen/size_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_24"
+                android:layout_marginBottom="@dimen/size_24"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set"
+                    android:textColor="@color/colorButtonNormal"
+                    android:textSize="@dimen/font_size_20" />
+
+                <TextView
+                    android:id="@+id/tv_detected_hub_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Derby "
+                    android:textColor="@color/colorButtonNormal"
+                    android:textSize="@dimen/font_size_20"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/as_home_hub"
+                    android:textColor="@color/colorButtonNormal"
+                    android:textSize="@dimen/font_size_20" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_24"
+                android:text="@string/set_home_hub_description"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrayLight"/>
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/size_36"
+                android:layout_gravity="end"
+                android:text="@string/yes"
+                android:textAllCaps="false"
+                android:theme="@style/AppTheme.Button.Flat"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_search_hub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_16"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:contentPaddingLeft="@dimen/size_16"
+        card_view:contentPaddingRight="@dimen/size_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_24"
+                android:layout_marginBottom="@dimen/size_24"
+                android:text="@string/select_hub_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_size_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_24"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city_town"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_size_16" />
+
+                <Spinner
+                    android:id="@+id/sp_hubs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_16"
+        android:text="@string/cont"
+        android:theme="@style/AppTheme.Button.Raised.Dark"/>
+
+</LinearLayout>

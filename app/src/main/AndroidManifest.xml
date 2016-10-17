@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.snizl.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider1502512339984910"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="false" />
+
+        <activity
+            android:name=".views.user.Login"
+            android:theme="@style/FullScreenTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.user.Register"
+            android:theme="@style/AppTheme.Light" />
+        <activity
+            android:name=".views.user.Setting"
+            android:theme="@style/AppTheme.Light" />
+        <activity android:name=".views.user.Preferences" />
+        <activity android:name=".views.user.MyWallet" />
+        <activity
+            android:name=".views.user.HomeHub"
+            android:theme="@style/AppTheme.Light" />
+        <activity android:name=".views.main.Main" />
+        <activity android:name=".views.business.Business" />
+        <activity android:name=".views.deal.Deal" />
+        <activity
+            android:name=".views.deal.ClaimInstore"
+            android:screenOrientation="landscape" />
+        <activity android:name=".views.main.add.Add" />
+        <activity android:name=".views.main.add.Review"/>
+    </application>
+
+</manifest>

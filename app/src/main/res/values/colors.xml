@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fa1745</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="colorButtonNormal">#fa1745</color>
+    <color name="colorButtonPressed">#a00429</color>
+
+    <color name="colorRedDark">#a00429</color>
+    <color name="colorRedLight">#EF9A9A</color>
+
+    <color name="colorWhiteTranslucent">#20FFFFFF</color>
+
+    <color name="colorGrayTranslucent">#80000000</color>
+    <color name="colorGrayLight">#dadada</color>
+    <color name="colorGrayDark">#757575</color>
+
+    <color name="colorDeal">#669900</color>
+    <color name="colorPromo">#aa66cc</color>
+    <color name="colorComp">#ff8800</color>
+</resources>

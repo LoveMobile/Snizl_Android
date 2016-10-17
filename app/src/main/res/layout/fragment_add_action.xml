@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/size_32"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/size_16"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_24" />
+
+        <TextView
+            android:id="@+id/tv_page_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_page_title"
+            android:layout_marginTop="@dimen/size_16"
+            android:text="Description"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="You can choose one or more."
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/size_08"
+        android:paddingRight="@dimen/size_08"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_instore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/size_08"
+            android:padding="@dimen/size_16"
+            android:drawableTop="@drawable/ic_store"
+            android:drawablePadding="@dimen/size_08"
+            android:text="@string/instore"
+            android:textAllCaps="false"
+            android:theme="@style/GrayBackgroundButtonTheme"/>
+
+        <Button
+            android:id="@+id/btn_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/size_08"
+            android:padding="@dimen/size_16"
+            android:drawableTop="@drawable/ic_link"
+            android:drawablePadding="@dimen/size_08"
+            android:text="@string/website"
+            android:textAllCaps="false"
+            android:theme="@style/GrayBackgroundButtonTheme"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/size_08"
+        android:paddingRight="@dimen/size_08"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/size_08"
+            android:padding="@dimen/size_16"
+            android:drawableTop="@drawable/ic_phone"
+            android:drawablePadding="@dimen/size_08"
+            android:text="@string/phone"
+            android:textAllCaps="false"
+            android:theme="@style/GrayBackgroundButtonTheme" />
+
+        <Button
+            android:id="@+id/btn_custom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/size_08"
+            android:padding="@dimen/size_16"
+            android:drawableTop="@drawable/ic_info_outline"
+            android:drawablePadding="@dimen/size_08"
+            android:text="@string/custom"
+            android:textAllCaps="false"
+            android:theme="@style/GrayBackgroundButtonTheme"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
